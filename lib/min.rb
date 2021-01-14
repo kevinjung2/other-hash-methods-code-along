@@ -10,4 +10,6 @@ require 'pry'
 
 def get_the_min(groceries)
   #code your solution here!
+  all_items = groceries.collect { |category, array| array }
+  all_items.flatten.sort.first
 end
